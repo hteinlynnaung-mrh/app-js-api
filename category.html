@@ -36,7 +36,7 @@
         fetch(api)
             .then(res => res.json()) 
             // if success,run then(res)
-            // to get the JSON data from response res.json()
+            // to get the JSON data from respond res.json()
             .then(data => data.map(item => createItem(item)));
             // if success,run then()
             // loop the data with map and call the createItem()
@@ -45,9 +45,9 @@
         
         /* //At first,call the api / if success,run then() / if failed,run catch()
         
-        fetch(api).then(function(res) { // creating the response function
+        fetch(api).then(function(res) { // creating the respond function
             res.json().then(function(data) {
-            // to get the json data from response / if success,run then()
+            // to get the json data from respond / if success,run then()
                 console.log(data);
             });
         }); 
